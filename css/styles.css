@@ -11616,7 +11616,8 @@ header {
 
 .font-cursive {
   font-family: 'Dancing Script', cursive;
+  font-size: 50px;
 }
 .navbar-brand:hover {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
 }
