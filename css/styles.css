@@ -11621,3 +11621,33 @@ header {
 .navbar-brand:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
 }
+
+/* Footer styling */
+footer {
+  background-color: #f8f9fa; /* Light background */
+  color: #495057; /* Darker text for contrast */
+  padding: 20px 0;
+}
+
+footer a {
+  color: #6c757d; /* Subtle link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Responsive layout for footer */
+@media (max-width: 768px) {
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer .col-auto {
+      margin-top: 10px;
+  }
+}
+
+ 

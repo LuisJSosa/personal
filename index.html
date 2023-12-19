@@ -44,12 +44,15 @@ https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css
 </div>
 
 <script>
-   function scrollToTop() {
-       window.scrollTo({top: 0, behavior: 'smooth'});
-   }
-   function scrollToBottom() {
-       window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
-   }
+// Scroll to Top Function
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+// Scroll to Bottom Function
+function scrollToBottom() {
+    window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+}
+
 </script>
 
       <!-- Preloader -->
@@ -165,14 +168,17 @@ https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css
          AOS.init();
       </script>
       <script>
-         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-             anchor.addEventListener('click', function (e) {
-                 e.preventDefault();
-                 document.querySelector(this.getAttribute('href')).scrollIntoView({
-                     behavior: 'smooth'
-                 });
-             });
-         });
+      // Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
      </script>
+     
    </body>
 </html>
