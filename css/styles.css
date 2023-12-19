@@ -11671,4 +11671,11 @@ footer a:hover {
   display: block;
 }
 
+.project-card {
+  margin-bottom: 30px; 
+}
+
+.skill-box {
+ background-color: #fff;
+}
  
