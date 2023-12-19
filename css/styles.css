@@ -11650,4 +11650,25 @@ footer a:hover {
   }
 }
 
+.skill-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-item::after {
+  display: none;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.skill-item:hover::after {
+  display: block;
+}
+
  
