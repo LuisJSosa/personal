@@ -67,6 +67,8 @@
   --bs-link-hover-color: #9e7e5f;
   --bs-code-color: #d4b59e;
   --bs-highlight-bg: #f8f6f1;
+  --sand-600: #d2b48c;  
+  --sand-700: #c2a080;  
 }
 
 
@@ -11597,9 +11599,24 @@ header {
 /* Blinking "I Build Things" Text Animation */
 @keyframes blinkText {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.2; }
+  20% { opacity: 0.2; }
 }
 
 .blink-text {
   animation: blinkText 8.5s ease-in-out infinite;
+}
+
+.text-sand-600 {
+  color: var(--sand-600);
+}
+
+.text-sand-700:hover {
+  color: var(--sand-700);
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+.navbar-brand:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
 }
