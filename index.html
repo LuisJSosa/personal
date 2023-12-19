@@ -159,26 +159,38 @@ function scrollToBottom() {
       </div>
       </footer>
    
-      <!-- Bootstrap core JS-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Custom Scripts -->
-      <script src="js/scripts.js"></script>
-      <script>
-         // Initialize AOS for animations
-         AOS.init();
-      </script>
-      <script>
-      // Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+   <!-- JavaScript Scripts -->
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-     </script>
-     
-   </body>
+    <!-- Custom Scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- AOS Initialization -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Smooth Scrolling for Anchor Links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Scroll to Top and Bottom Functions -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        function scrollToBottom() {
+            window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+        }
+    </script>
+</body>
 </html>
